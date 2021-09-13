@@ -142,3 +142,9 @@ const displaySingleItem = (item) => {
       </div>`;
   singleItem.appendChild(div);
 };
+
+//bonus section for "Buy Now"  button click
+const buyingConfrimation = () => {
+  let message = confirm("Place order and Pay through online transection. Have a nice Day!!!")
+  console.log(message);
+}
