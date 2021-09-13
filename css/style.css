@@ -16,7 +16,6 @@ body {
 .search-box {
   border: 2px solid rgba(3, 211, 166, 0.76);
   width: 281px;
-  /* width: 35%; */
   border-radius: 5px;
   margin: auto;
   margin-top: 50px;
@@ -30,7 +29,6 @@ body {
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid black; */
   text-align: center;
   width: 100%;
   margin: auto;
@@ -52,7 +50,6 @@ body {
 }
 .cart {
   width: 350px;
-  /* border: 1px solid green; */
   padding: 10px;
   box-shadow: 10px 10px 20px gray;
   border-radius: 5px;
@@ -69,7 +66,6 @@ body {
   }
   .cart {
     width: 300px;
-    /* border: 1px solid green; */
     padding: 10px;
     box-shadow: 10px 10px 20px gray;
     border-radius: 5px;
@@ -86,7 +82,7 @@ body {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-/* rating */
+/* rating stars */
 .rating{
   display: flex;
   align-items: center;
@@ -117,12 +113,10 @@ body {
 .header-2{
 color: rgb(122, 44, 44);
 }
-/* .star{
-  --percent: calc(var(--rating) / 5 * 100%);
-} */
 .btn-color{
   color: rgba(65, 201, 201, 0.993);
 }
+/* bonus section for single item display */
 #single-item{
 width: 30%;
 padding-top: 5px;
@@ -136,10 +130,7 @@ background-color: lightcyan;
   margin-left: 20px;
   
 }
-/* .singleDiv{
-  text-align: justify;
-} */
+/* fixing price cart at the right top position */
 .cart{
-  /* position: relative; */
   position: absolute;
 }
