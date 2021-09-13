@@ -38,7 +38,8 @@ const showProducts = (products) => {
       </div>
       <p>Number of People  Rated : <strong>${product.rating.count} </strong></p> 
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-primary">add to cart</button>
-      <button onclick="getSingleItem(${product.id})" id="details-btn" class="btn btn-info">Details</button></div>
+      <button onclick="getSingleItem(${product.id})" id="details-btn" class="btn btn-info">Details</button>
+      </div>
       `;
     document.getElementById("all-products").appendChild(div);
   }
@@ -115,14 +116,15 @@ const getSingleItem = (itemId) => {
     .then(data => displaySingleItem(data))
 }
 const displaySingleItem = (item) => {
-  console.log(item.image)
+  // console.log(item.image)
   const singleItem = document.getElementById('single-item');
+  singleItem.textContent = '';
   const div = document.createElement('div');
   div.classList.add('card');
   div.innerHTML = `
-  <div class="">
+  <div class="text-center">
       <div>
-    <img class="" src=${item.image}>
+    <img class="singleImage" src=${item.image}>
       </div>
       <h3>${item.title}</h3>
       <p>Category: ${item.category}</p>
@@ -138,9 +140,12 @@ const displaySingleItem = (item) => {
       <i class="fas fa-star empty"></i>
       
       </div>
+      <div class="">
       <p>Number of People  Rated : <strong>${item.rating.count} </strong></p> 
       <button onclick="addToCart(${item.id},${item.price})" id="addToCart-btn" class="buy-now btn btn-primary">add to cart</button>
-      <button onclick="getSingleItem(${item.id})" id="details-btn" class="btn btn-info">Details</button></div>
-  `;
+      <button onclick="getSingleItem(${item.id})" id="details-btn" class="btn btn-info">Details</button>
+
+      </div>
+      </div>`;
   singleItem.appendChild(div);
 };

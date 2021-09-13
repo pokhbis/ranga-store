@@ -124,5 +124,22 @@ color: rgb(122, 44, 44);
   color: rgba(65, 201, 201, 0.993);
 }
 #single-item{
-  width: 30%;
+width: 30%;
+padding-top: 5px;
+margin: auto;
+border-radius: 10px;
+background-color: lightcyan;
+}
+.singleImage{
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
+  
+}
+/* .singleDiv{
+  text-align: justify;
+} */
+.cart{
+  /* position: relative; */
+  position: absolute;
 }
