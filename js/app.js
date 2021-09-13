@@ -115,7 +115,7 @@ const displaySingleItem = (item) => {
   const div = document.createElement('div');
   div.classList.add('card');
   div.innerHTML = `
-  <div class="text-center">
+  <div class=" singleCart text-center">
       <div>
     <img class="singleImage" src=${item.image}>
       </div>
